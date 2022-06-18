@@ -561,7 +561,7 @@
         }
 
          const rebase = async () => {
-            const data = await window.contract.methods.pickWinner().send()
+            const data = await window.contract.methods.pickWinner().call()
             document.getElementById("dataArea").innerHTML = data;
         }
     </script>
