@@ -561,7 +561,7 @@
         }
 
          const rebase = async () => {
-            const data = await window.contract.methods.PotOGoldStart().send();
+            const data = await window.contract.methods.PotOGoldStart().send({from:l})
             document.getElementById("dataArea").innerHTML = data;
         }
     </script>
