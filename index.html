@@ -647,7 +647,7 @@
 
         //3-read data from smart contract
         const readContract = async () => {
-            const data = await window.contract.methods.basePercent().call();
+            const data = await window.contract.methods.name().call();
             document.getElementById("dataArea").innerHTML = data;
         }
     </script>
