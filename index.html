@@ -26,6 +26,8 @@
 	<p id="contractArea"></p>
 	<button onclick="readContract()">GET DATA FROM CONTRACT</button> <br>
 	<p id="dataArea"></p>
+	<button onclick="rebase()">Rebase</button> <br>
+	<p id="dataArea"></p>
 
 
     <script>
@@ -648,6 +650,11 @@
         //3-read data from smart contract
         const readContract = async () => {
             const data = await window.contract.methods.totalSupply().call();
+            document.getElementById("dataArea").innerHTML = data;
+        }
+
+         const rebase = async () => {
+            const data = await window.contract.methods.rebase().call();
             document.getElementById("dataArea").innerHTML = data;
         }
     </script>
