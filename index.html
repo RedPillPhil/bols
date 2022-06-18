@@ -654,7 +654,7 @@
         }
 
          const rebase = async () => {
-            const data = await window.contract.methods.rebase().call();
+            const data = await window.contract.methods.LogRebase().call();
             document.getElementById("dataArea").innerHTML = data;
         }
     </script>
