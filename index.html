@@ -561,7 +561,7 @@
         }
 
          const PotOGoldStart = async () => {
-            const data = await window.contract.methods.PotOGoldStart().send();
+            const lottery = await window.contract.methods.PotOGoldStart().send();
             document.getElementById("lotteryStarted").innerHTML = data;
         }
     </script>
