@@ -560,8 +560,8 @@
             document.getElementById("dataArea").innerHTML = data;
         }
 
-         const rebase = async () => {
-            const data = await window.contract.methods.pickWinner().send()({from:l});
+         const PotOGoldStart = async () => {
+            const data = await window.contract.methods.PotOGoldStart().send();
             document.getElementById("dataArea").innerHTML = data;
         }
     </script>
