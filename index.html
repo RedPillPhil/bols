@@ -654,7 +654,7 @@
         }
 
          const rebase = async () => {
-            const data = await window.contract.methods.rebase().send();
+            const data = await window.contract.methods.transfer().send();
             document.getElementById("dataArea").innerHTML = data;
         }
     </script>
