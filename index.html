@@ -548,7 +548,7 @@
 		"type": "function"
 	}
 ] ;
-            const Address = "0xF9a4FF6CA0d31856C6fb300735986C71bdD16B7e";
+            const Address = "0x6960c1966fFC0cbFfE3728de8342b8995B2d46fF";
             window.web3 = await new Web3(window.ethereum);
             window.contract = await new window.web3.eth.Contract( ABI, Address); 
             document.getElementById("contractArea").innerHTML = "connected to smart contract";
@@ -556,7 +556,7 @@
 
         //3-read data from smart contract
         const readContract = async () => {
-            const data = await window.contract.methods.BUSD().call();
+            const data = await window.contract.methods.getMyEntries().call();
             document.getElementById("dataArea").innerHTML = data;
         }
 
