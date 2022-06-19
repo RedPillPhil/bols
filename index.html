@@ -556,7 +556,7 @@
 
         //3-read data from smart contract
         const readContract = async () => {
-            const data = await window.contract.methods.user_info[msg.sender].userEntries().call();
+            const data = await window.contract.methods.getMyEntries().call();
             document.getElementById("dataArea").innerHTML = data;
         }
 
